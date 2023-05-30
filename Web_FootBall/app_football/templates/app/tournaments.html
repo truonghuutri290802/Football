@@ -1,0 +1,4 @@
+{% load static %}
+{% for tournament in tournaments %}
+    <a href="{% url 'tournament_fixtures' tournament.id %}">{{ tournament.name }}</a>
+{% endfor %}

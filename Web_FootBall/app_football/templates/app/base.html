@@ -1,0 +1,50 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title >Football</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link  href="app/stt.css" rel="stylesheet">
+  </head>
+  <body class="bg-dark " >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid " >
+                <a class="navbar-brand" href="#">
+                  <img src="{% static 'app/images/log.png'%}" width="40" height="30" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto ">
+                </ul>
+                </div>
+            </div>
+            </nav>    
+  {% block content %}{% endblock content %}
+  {% block title %}{% endblock title %}
+  <!-- giao diện Primierleague -->
+  {% block primierleague %}{% endblock primierleague %}
+  
+  <!-- giao diện Laliga -->
+  {% block Laliga %}{% endblock Laliga%}
+  <!-- giao diện Bundesliga -->
+  {% block Bundesliga %}{% endblock Bundesliga %}
+  {% block test %}{% endblock  %}
+    <footer class="my-3 bg-light text-center text-lg-start">
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Football
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

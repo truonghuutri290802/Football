@@ -1,0 +1,53 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner container-fluid">
+    <div class="carousel-item active">
+      <img src="{% static 'app/images/pack.png'%}" class="d-block w-100" alt="..." height ='300'>
+      <div class="carousel-caption d-none d-md-block">
+        <h1>Chào mừng đến với thế giới bóng đá </h1>
+        <p>Hãy khám phá những tin tức, tỷ số và điểm nổi bật mới nhất từ các giải đấu và đội bóng yêu thích của bạn.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block title %}
+<div class="container my-3 "style="font-family: 'Open Sans', sans-serif;" >
+  <div class="row">
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'app/images/premierleague.jpeg' %}" class="card-img-top" alt="..."width="50"  height = '200'>
+        <div class="card-body">
+          <h2 class="card-title text-info">Premier League</h2>
+          <p class="card-text">Cập nhật tin tức, tỷ số và bảng xếp hạng mới nhất đến từ Giải ngoại hạng Anh</p>
+          <a  class="btn btn-primary stretched-link container-fluid bg-dark " href="{% url 'premierleague'%}">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'app/images/laliga.jpeg' %}" class="card-img-top" alt="..."width="50"  height = '200'>
+        <div class="card-body">
+          <h2 class="card-title text-info">La Liga</h2>
+          <p class="card-text ">Khám phá những tin tức, tỷ số và bảng xếp hạng mới nhất từ Laliga Tây Ban Nha</p>
+          <a href="{% url 'laliga'%}" class="btn btn-primary stretched-link container-fluid bg-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100">
+        <img src="{% static 'app/images/bundes.png' %}" class="card-img-top" alt="..." width="50" height = '200'>
+        <div class="card-body">
+          <h2 class="card-title text-info">Bundesliga</h2>
+          <p class="card-text">Luôn cập nhật những tin tức, tỷ số và bảng xếp hạng mới nhất từ ​​Bundesliga của Đức.</p>
+          <a href="{% url 'bundesliga'%}" class="btn btn-primary stretched-link container-fluid bg-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

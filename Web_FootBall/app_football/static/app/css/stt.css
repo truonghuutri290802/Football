@@ -1,0 +1,30 @@
+/* Thiết lập font chữ chính */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #102745;
+  }
+  
+  /* Thiết lập màu nền cho navbar */
+  .navbar {
+    background-color: #f8f9fa;
+  }
+  
+  /* Thiết lập màu chữ cho breadcrumb */
+  .breadcrumb-item {
+    color: #6c757d;
+  }
+  
+  /* Thiết lập màu nền cho card */
+  .card {
+    background-color: #0d1218;
+  }
+  
+  /* Thiết lập màu chữ cho card title */
+  .card-title {
+    color: #212529;
+  }
+  
+  /* Thiết lập màu chữ cho card text */
+  .card-text {
+    color: #6c757d;
+  }
